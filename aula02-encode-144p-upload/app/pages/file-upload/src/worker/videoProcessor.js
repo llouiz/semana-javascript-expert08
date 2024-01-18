@@ -168,7 +168,7 @@ export default class VideoProcessor {
             // fazer upload
             await this.#service.uploadFile({
                 filename: `${filename}-${resolution}.${++segmentCount}.${type}`,
-                blob
+                fileBuffer: blob
             });
 
             // vai remover todos os elementos
